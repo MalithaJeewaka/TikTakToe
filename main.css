@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background: #ff416c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff4b2b,
+    #ff416c
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff4b2b,
+    #ff416c
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+}
+
+header {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  border: white 5px solid;
+  border-radius: 1rem;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border: 5px white solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+i {
+  font-size: 4rem;
+  pointer-events: none;
+  transform: scale(0.8);
+  transition: all 0.25s;
+}
+
+.i-anim {
+  transform: scale(1);
+}
+
+.result {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.restart {
+  display: none;
+
+  padding: 0.7rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  border: 4px solid white;
+  border-radius: 10px;
+  outline: none;
+}
+
+.btn-ani {
+  display: flex;
+}
